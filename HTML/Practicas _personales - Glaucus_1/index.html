@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<!--ejercicio hecho con lo aprendido del video @midudev https://youtu.be/3nYLTiY5skU?si=ZvojMoExf27QLEnV
+-->
+<head>
+    <!--Espacio para poner metadatos e información general del sitio, CSS, etc
+    -->
+    <meta charset="utf-8">
+    <!--Esta es la codificación que debe usar, si no se pone hay problemas con emojis o símbolos (acentos)
+    -->
+    <meta name="viewport" content="width=device-widt">
+    <!--Con esto se establece que el contenido es adaptable al tamaño de la pantalla-->
+    <title>Glaucus Atlanticus</title>
+    <!--Este título es el nombre de la pestaña en el navegador y que google usa para aparecer en búsquedas, entonces implica en el SEO por lo que es mal visto si no se pone  
+    -->
+    <meta name="robots" content="index, follow">
+    <!--metadato importante para los buscadores que indica que si deben indexar la página y seguir los enlaces
+    -->
+    <meta name="theme-color" content="#09f">
+    <!--con este se puede cambiar el color del navegador (cuando tienen habilitada la versión estándar)
+    -->
+    <link rel="icon" type="image/jpeg" href="imgs/glaucus1.jpeg">
+    <!--Favicon
+    -->
+    <meta name="description" content="Primer ejercicio de Nadja, acerca del Glaucus Atlanticus">
+    <!--esa descripción usa google cuando haces una búsqueda y aparece tu sitio
+    -->
+    <!--OPEN GRAPH, revisar herramienta, conjunto de meta tags para que se vea bien cuando se comparta el contenido.La herramienta evalúa y simula el cómo se vería en las RRSS. (hay más y con funciones diversas, revisar en el sitio opengraph protocol. EJEMPLO:
+    -->
+    <meta property="og:title" content="Primera web de Nadja">
+    <meta property="og:description" content="Un poco de información sobre el Glaucus Atlanticus">
+    <meta property="og:image" content="imgs/glaucus1.jpeg">
+    <meta property="og:image:alt" content="Glaucus, un nudibranquio que se alimenta de medusas y ocupa su veneno para autodefensa">
+
+    <!-- <link rel="alternate" href="https://midu.dev/en" hreflang="es-GB"></linkrel> Esto, sirve para que avisar al navegador que hay una alternativa de la página (por ejemplo, en otro idioma)
+    -->
+    <!-- <link rel="canonical" href="https://midu.dev"> con esto se establece la "versión oficial" de la página
+    -->
+    <!--En head también va el CSS. Ej:
+    -->
+    <style>
+        body {
+            background: rgb(85, 150, 211);
+        }
+    </style>
+</head>
+
+
+<body>
+    <!--No afecta que se use MAYUS pero de preferencia SIEMPRE USAR MINÚSCULAS-->
+    <header>
+        <h1>Glaucus Atlanticus</h1>
+        <nav>
+            <a href="#habitat">Hábitat</a>
+            <!--<a href="">es para referenciar una ubicación en la misma página-->
+            <a href="#dieta">Dieta</a>
+            <a href="#depredadores">Depredadores</a>
+            <a href="https://youtu.be/Vc72Qpk6P2E?si=v8OyzY5jaA89LdhD" target="_blank" rel="noreferrer">Video</a>
+            <!--referencia un video  pero si no se pone <target>, se sale de nuestra página. Con <target> _blank se abre en una nueva pestaña-->
+            <!--con rel="noreferrer" se permite que cuando se abre una pestaña/ventana nueva, no copie en el enlace información delicada, privada que pueda entregar información innecesaria-->
+        </nav>
+        <!--enlaces internos-->
+    </header>
+
+    <main>
+        <!--<video autoplay loop muted a src="(dirección en carpeta)"></video>-->
+        
+        <!--
+            <iframe style="width:100%; aspect-ratio:16/9;" 
+            src="https://youtu.be/O-quZ43fdqQ?si=hTIZLTVG7fsBAU91"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer"; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        -->
+            <!--etiqueta que sirve para incrustar otra pag web/video de otro lado. tener cuidado con los permisos que permito desde un sitio ajeno-->
+
+        <p>El dragón azul (Glaucus atlanticus), es una especie de gasterópodo nudibranquio de la familia Glaucidae. Está emparentado de forma estrecha con Glaucilla marginata, otro miembro de la familia Glaucidae</p>
+        <p>El dragón marino azul vive en diversos mares templados, cálidos y tropicales. El hábitat del Glaucus atlanticus está en mares como los de este y del sur de Sudáfrica, en la costa de Australia, en Mozambique y en las costas europeas.</p>
+        <a download href="imgs/glaucus1.jpeg">
+            <img 
+                width="350"
+                height=""
+                title="Foto de glaucus atlanticus" 
+                alt="Una fotografía del glaucus atlanticus o dragón de mar. Es un nudibranquio acostado de estómago hacia abajo, con cola y cuatro estremidades. De cada extremo de la extremidad, nacen múltiples ramas como dedos de babosa." 
+                src="imgs/glaucus1.jpeg">
+                <!--las comillas en los atributos no son obligatorias, pero deben ir si o sí, cuando hay una cadena de texto. Ej: "Foto_de_midudev"
+                -->
+                <!--*nota: los comentarios sólo se pueden integrar entre elementos, no se puede entre atributos
+                -->
+                <!--el atributo "hidden" es un atributo booleano (que no necesita valor). Si se usa, el elemento queda oculto.-->
+        </a>
+        <!-- el <a download href!!></a> sirve para forzar a descargar la imagen/recurso; sólo sirve con elementos que tengo en mi propio dominio-->
+        <a href="https://www.google.cl/search?sca_esv=875cca400690ed1e&sxsrf=ADLYWIKTCERBfanbyzSheBqZQSDM3xwycA:1729530052625&q=glaucus+atlanticus&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgWizR0-0aFOH11Sb5tlNhdzTfxpAVBoexMFZnKJBpl_NibeLqpdqLlYXarYwntqndKo7lW3AcTjajmWdEaf7wl_SMnoD-m1jyar4qJYSftCYqr8mp5NCLJVUv_VmkqtB96cue07LzCZHz7Bqnve0ssrwp94KGxocLX2hV_QwD4905xJIoKg7YhYWCHUdccX4eRYe4Dw&sa=X&ved=2ahUKEwj846jD-Z-JAxUqBLkGHSTdN_EQtKgLegQIEhAB&biw=1536&bih=742&dpr=1.25"
+        target="_blank" 
+        rel="noreferrer">
+            <button>Otras imágenes</button>
+        </a>
+
+        
+        <dialog id="dialog">
+            <h1>Practicar abrir una modal</h1>
+            <p> a verrsss</p>
+            <button id="hide">Cerrar modal</button>
+        </dialog>
+
+        <button id="show">Ver más información</button>
+        
+        <script>
+            window.show.addEventListener('click',() => {
+                window.dialog.showModal()
+            })
+            window.hide.addEventListener('click',() => {
+                window.dialog.close()
+            })
+        </script>
+        <!-- esto es un pop up! (¿cómo hacer que se abra al abrir la página??)-->
+        
+
+        <ul>
+            <li>Generalmente, el dragón azul come <strong>medusas, corales y anémonas de mar.</strong></li>
+            <li>De manera asombrosa, el dragón azul suele comer al agua mala conocida como carabela portuguesa o <b><i>"Physalia physalis"</i></b>, que es bastante venenoso.</li>
+            <!--en html para letra "en negrita" se usa <strong></strong> pero en CSS se usa .bolded { font-weight: bold; }  //  <span class="bolded">palabra</span>
+            --> 
+            <li>También come vela púrpura o <em>Velella velella</em>, que igualmente es venenosa y se convierte en materia prima para reciclar a su favor, el veneno consumido.</li>
+            <!--en html para la letra "cursiva" se usa <i></i> (italic) pero <em></em> es más aceptada (emphasis). En CSS se usa .emphasized { font-style: italic; }   //   <span class="emphasized">palabra</span>
+            -->
+            <li>En la anatomía del Glaucus atlanticus, existen unos discos que utiliza como barrera para este veneno. Cuando se alimenta <u>guarda el veneno de estos animales en unos sacos</u>, procesándolo luego como propio, es decir, crea el veneno del Glaucus atlanticus.</li>
+            <!--para "subrayar" se puede usar <u></u> pero está pensado para casos de uso específicos, como marcar palabras mal escritas, denotar nombres propios en texto chino o indicar nombres de familia.
+            Para subrayar con CSS .underlined {text-decoration: underline;}   //   <span class="underlined"> esta línea está subrayada</span>.</p>
+            -->
+        </ul>
+        
+        <aside>
+            <header>
+                <h2>Principales características del Glaucus Atlanticus</h2>
+            </header>
+            <ol type="a" reversed start="z">
+                <li>El tamaño del Glaucus Atlanticus varía entre <strong>2 y 3 cm de largo, muy pocas veces alcanza los 5 cm</strong></li>
+                <li>Se caracteriza además por una <strong>bolsa de gas en su estómago</strong>. Esta bolsa lo ayuda a flotar al revés evitando que se salga de la superficie del agua.</li>
+                <li>El <em>Glaucus Atlanticus</em> es una de las babosas marinas que más llama la atención por sus colores. Posee un color entre azul y plateado, muy llamativo e inusual.</li>
+                <li>Los investigadores describen su cuerpo como un tronco aplanado con seis apéndices que se dividen en rayos.</li>
+                <!--Ordered List, aparecen con números correlativos-->
+        </aside>
+        <!--esto es como información que se pone al lado, que da información suplementaria al contenido; o una navegación que acompaña el contenido, que tiene que ver con el contenido, pero no es el contenido-->
+
+        <section>
+            <article>
+                <h3 id="habitat">Hábitat del <em>Glaucus Atlanticus</em></h3>
+                    <p>El Glaucus Atlanticus es pelágico, es decir, se le puede encontrar en la mayoría de océanos y aguas de mares, en zonas tanto templadas como tropicales del planeta.
+                    <p>Algunas regiones en donde se encuentra incluye el este y la costa sur de Sudáfrica, aguas Europeas, la costa este de Australia y Mozzambique.</p>
+                    <p>En muchas ocasiones accidentalmente y fuera del alcance de este animal, el viento los va empujando hacia las playas en donde quedan varados. Lo que puede provocar que se expandan en esas zonas.</p>
+            </article>
+            <!--elemento con info propia contenida que si se extrae el elemento a otro lugar, sigue teniendo sentido. No pierde estructura.-->
+        </section>
+        <!--sirve para marcar secciones independientes genéricas de un documento. Pueden haber secciones dentro de otras-->
+        <section>
+            <article>
+                <h3 id="dieta">Dieta del <em>Glaucus Atlanticus</em></h3>
+                    <p>La principal fuente alimenticia de este animal raro son otros seres vivos que se encuentran en el mar como medusas, corales y anémonas de mar.</p>
+                    <p>Una de los principales componentes de su dieta es la medusa carabela portuguesa que es altamente venenosa y mucho más grande.</p>
+                    <p>Sin embargo, este la devora en su totalidad, posteriormente selecciona estas toxinas venenosas de las cuales se ha vuelto inmune y las lleva a su estómago donde las almacena para su propio uso, transformando así dicho veneno en uno más mortal.</p>
+                    <p>El veneno lo almacena mediante sacos especializados en la punta de sus dedos que se encuentran en sus extremidades.</p>
+                    <p>Este veneno se vuelve más poderoso que el que poseía el animal que ingirió y que utilizará más adelante para defenderse cuando se encuentre en peligro.</p>
+                    <p>En un caso extremo de que no consiga su comida preferida, que esté muy hambriento o que en su zona esté un animal de su misma especie, el Glaucus Atlanticus se convierte en carnívoro. Es decir, es un depredador en todo el sentido de la palabra que hará todo lo posible por sobrevivir.</p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3 id="depredadores">Depredadores del <em>Glaucus Atlanticus</em></h3>
+                    <p>Según investigaciones este tipo de especie <strong>no tiene muchos depredadores</strong>, pero su supervivencia se ve determinada por las condiciones climatológicas y la temperatura del agua.</p>
+            </article>
+        </section>
+
+        <section>
+            <h3>Formulario de contacto</h3>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <div>
+                        <label>Nombre:
+                            <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>Email:
+                            <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" required>
+                        </label>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Información Adicional</legend>
+                        <label>Teléfono:
+                            <input type="tel" id="phone" name="email" placeholder="+56988888888" required pattern="[0-9]{9}">
+                        </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros</legend>
+
+                    <div>
+                        <label for="why">¿Por qué quieres contactarme?</label>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Duda</option>
+                            <option value="3">Más información</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="terms">¿Aceptas los términos?</label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    </div>
+
+                    <div>
+                        <datalist id="languajes">
+                            <option value="Javascript"></option>
+                            <option value="Phyton"></option>
+                            <option value="Java"></option>
+                            <option value="C#"></option>
+                        </datalist>
+                        <label>
+                            ¿Con qué lenguaje debo partir?
+                            <input list="languajes" name="languajes">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button>Enviar contacto></button>
+                <!--al poner <button> dentro de un formulario, automáticamente asume que es type="submit" así que no es necesario ponerlo-->
+            </form>
+        </section>
+
+        <section>
+            <h2>Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Qué estudios tienes?</summary>
+            <p>Primero estudié Diseño Industrial</p>
+            </details>
+        
+            <details>
+                <summary>¿Cuáles son tus hobbies favoritos?</summary>
+            <p>Me gusta la impresión 3D, modelado 3D y la ciencia ficción.</p>
+            </details>
+            <details>
+                <summary>¿Por qué estudias front end?</summary>
+            <p>Quiero otro trabajo</p>
+            </details>
+        </section>
+
+        <Section>
+            <article>
+                <header>
+                    <h4>Probando poner imágenes más grandes</h4>
+                    <img style="width:100%; aspect-ratio:2400/1602;" 
+                    loading="lazy" 
+                    src="/imgs/glaucus comiendo.jpg" 
+                    alt="Un Glaucus Atlanticus flotando en la tensión superficial del agua mientras come una medusa vellello">
+                </header>
+            </article>
+        </Section>
+
+
+    </main>
+    <!--es el contenido que cambia en cada página, lo que la hace única-->
+
+    <footer>
+        Copyright @ 2024
+
+        <a href="mailto:nadja.villarroel.n@gmail.com"Envíame un correo></a>
+        <a href="whatsapp://send?text=Hola Nadja!+56989930088"Mandar whatsapp></a>
+        <!--estos tienen "ancos?" especiales que no necesitan http; otro ejemplo es <a href="tel:+56988888888"llámame por teléfono></a>-->
+    </footer>
+
+</body> 
+</html>
