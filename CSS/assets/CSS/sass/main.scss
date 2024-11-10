@@ -1,0 +1,61 @@
+@import "/assets/CSS/sass/abstracts/functions";
+@import "/assets/CSS/sass/abstracts/mixins";
+@import "/assets/CSS/sass/abstracts/variables";
+
+@import "/assets/CSS/sass/base/reset";
+@import "/assets/CSS/sass/base/typography";
+
+@import "/assets/CSS/sass/components/buttons";
+@import "/assets/CSS/sass/components/carousel";
+@import "/assets/CSS/sass/components/slider";
+
+@import "/assets/CSS/sass/layout/footer";
+@import "/assets/CSS/sass/layout/forms";
+@import "/assets/CSS/sass/layout/grid";
+@import "/assets/CSS/sass/layout/header";
+@import "/assets/CSS/sass/layout/navigation";
+@import "/assets/CSS/sass/layout/sidebar";
+
+@import "/assets/CSS/sass/pages/contacto";
+@import "/assets/CSS/sass/pages/equipo-medico";
+@import "/assets/CSS/sass/pages/index";
+
+@import "/assets/CSS/sass/themes/admin";
+@import "/assets/CSS/sass/themes/theme";
+
+@import "/assets/CSS/sass/vendors/bootstrap";
+@import "/assets/CSS/sass/vendors/jquery-ui";
+
+
+body {
+    background-color: white;
+    align-content: center;
+}
+
+h1{
+    color: $colorazul;
+}
+
+#navbar {
+    display: inline-flexbox;
+    background-color: $colorazul;
+    color: white;
+    padding: 10px;
+
+    a:link {
+        color: $colorrojo;
+        }
+    a:visited {
+        color: #ffffff;
+        }
+    a:hover {
+        color: #acacac;
+        }
+    a:active {
+        color: #ffffff;
+        }
+}
+
+.navbar {
+    padding: 1%;
+}
