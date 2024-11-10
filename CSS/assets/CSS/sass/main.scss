@@ -25,3 +25,16 @@
 
 @import "/assets/CSS/sass/vendors/bootstrap";
 @import "/assets/CSS/sass/vendors/jquery-ui";
+
+
+$colorazul: #0b2b85;
+$colorrojo: #b50606;
+
+#navbar {
+    background-color: $colorazul;
+    padding: 10px;
+}
+
+.navbar {
+    padding: 10px;
+}
